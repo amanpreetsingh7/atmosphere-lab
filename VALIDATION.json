@@ -1,0 +1,25 @@
+{
+  "standalone_version": "0.8.10+standalone.1",
+  "base_workbench_version": "0.8.10",
+  "python": "3.12.14",
+  "dependencies": {
+    "numpy": "1.26.4",
+    "matplotlib": "3.10.8",
+    "astropy": "6.0.1",
+    "streamlit": "1.50.0",
+    "plotly": "6.9.0",
+    "pandas": "2.2.3",
+    "scipy": "1.17.0",
+    "netCDF4": "1.6.5",
+    "pyarrow": "17.0.0"
+  },
+  "software_tests": {
+    "command": "python -m unittest discover -s tests -v",
+    "passed": 139,
+    "failed": 0
+  },
+  "fresh_folder_streamlit_startup": "passed",
+  "analytic_demo": "passed",
+  "python_3_9_syntax": "passed",
+  "scope": "Constructed or analytic software inputs. Native spectrum downloads and observational validation were not run. Remote workflow configured but not executed here."
+}

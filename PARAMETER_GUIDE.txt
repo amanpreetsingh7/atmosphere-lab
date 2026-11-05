@@ -1,0 +1,98 @@
+ATMOSPHERE LAB — CLOUDS, METALLICITY, C/O AND MIXING
+
+Open the standalone project in PyCharm. Run install_requirements.py with
+the project interpreter, then run launch_app.py. Install or import models
+locally; they are not included with the source. See README.md.
+
+ADD THE NATIVE MODELS INSIDE THE APP
+
+5. Open Model library - downloads and imports > Download models.
+   Leave the new subset controls at 1000 K and gravity 100 m/s² initially.
+   This is log g=4.0 in cgs, shared by the new companion subsets.
+6. Click Add Diamondback clouds + metallicity. Wait for READY, then Refresh
+   model selectors. It selects 8 native files, about 44 MB transfer plus a
+   small index, about 100 MB model storage. It does not download the 8.6 GB ZIP.
+7. Click Add Flame Skimmer metallicity + C/O + mixing. Wait for READY and
+   Refresh model selectors. It selects 11 R3000 native files, about 3.24 MB
+   model storage and about 7 MB transfer including the archive index.
+   It does not download the 8.7 GB ZIP. The native resolution stays explicit.
+   Previously installed PHOENIX, Bobcat, ATMO and other models remain available.
+
+MAKE THE NEW FIGURES INSIDE THE APP
+
+8. Choose an installed PHOENIX stellar spectrum and a companion from the
+   local catalog. Keep your chosen star radius and companion radius fixed.
+   Run comparison. The Parameter exploration tab uses this star and these
+   radii even when you choose a different companion family within the tab.
+9. Open Parameter exploration. Choose sonora_diamondback and Parameter to
+   vary = Cloud sedimentation f_sed / cloud-free. Check Fixed atmosphere
+   parameters: 1000 K, log g=4.0, metallicity=0, C/O relative to solar=1.
+   Select 1, 2, 3, 4, 8 and cloud-free, then Compare native parameter values.
+   Switch the plot between surface spectrum and companion/star contrast.
+10. Keep the Diamondback family; vary Metallicity [M/H; dex]. Set f_sed=2
+    and other parameters as above. Compare -0.5, 0 and +0.5.
+11. Choose sonora_flame_skimmer_v1_r3k. Vary C/O relative to solar. Keep
+    1000 K, log g=4.0, metallicity=0 and chemistry=equilibrium. Compare
+    0.5, 1, 1.5 and 2.5. These are multiples of solar C/O (solar=0.458),
+    not the absolute atomic ratios.
+12. Optional extra comparisons: Flame Skimmer metallicity -0.5, 0, +0.5
+    at C/O=1 and equilibrium chemistry; or log Kzz=2,4,7,8,9 at solar
+    composition and disequilibrium chemistry. Kzz is in cm²/s.
+    The app starts with a fixed-parameter group that supports variation.
+    All displayed fixed settings can be changed to other installed nodes.
+
+FILTER PREDICTIONS AND DOWNLOADS
+
+13. In Filters & limits, calculate your supplied response, or use the
+    explicitly labeled idealized top-hat method check (e.g. 3.5–4.0 um).
+    Go back to Parameter exploration, leave Include responses selected,
+    then Compare native parameter values again. The table reports contrasts
+    integrated through that response using each native spectrum.
+    All selected native models must cover the complete response; otherwise
+    the calculation stops with an explanation. No partial response is used.
+14. Click Prepare parameter figures and results, then Download parameter
+    comparison ZIP. It includes PNG/PDF figures, per-curve CSVs, band CSV
+    and JSON containing parameters, units, source hashes and fixed settings.
+    Prepare and save each comparison before changing the parameter/family.
+    The main Export & provenance bundle also includes the currently displayed
+    parameter result. It does not collect every earlier parameter comparison.
+15. After installation, use Model library > Validate installed models > Run
+    installed-model diagnostics. This runs on your laptop. Existing filters
+    are reused for native band-coverage checks. One-temperature starter
+    subsets do not by themselves provide temperature/gravity holdout tests.
+
+EXTEND THE LIBRARY
+
+Change a new downloader's temperature/gravity and click its button again to
+add another native subset. The defaults are examples, not fixed limits of
+the program. Only published node choices are offered. Missing or incomplete
+subsets stop explicitly; no nearby model is substituted. Other release-native
+files can be added through Import a grid folder. Keep full-resolution Flame
+Skimmer files separate: this adapter deliberately accepts only v1 R3000.
+
+Elf Owl v2 NetCDF files can be imported with sonora_elf_owl_v2 using their
+original spectra_logzz_...nc filenames. Select corrected v2 source files;
+the file contents alone do not prove that release version. No large Elf Owl
+archive is automatically downloaded by this update.
+
+WHAT THE COMPARISONS MEAN
+
+The calculation is (companion radius / stellar radius) squared, multiplied
+by companion surface flux / stellar surface flux. Every curve uses the same
+star, radii, shared wavelength interval and display bins. Bands use native
+spectral samples. Cloud, metallicity, C/O and mixing values are exact native
+choices; the app does not interpolate between them in this workflow.
+
+Cloud sedimentation f_sed is the model's cloud parameter, not a measured
+cloud-cover fraction. Cloud-free is a discrete case. Differences between
+families also include different opacity, chemistry and abundance assumptions.
+Matching Teff and log g alone does not isolate the effect of clouds.
+
+Software tests and official metadata checks were completed for this update.
+The new native-model spectra, diagnostics and figures still need to run on
+your laptop. This is not a self-consistent irradiated-atmosphere solver.
+
+Official model releases:
+Diamondback: https://zenodo.org/records/12735103
+Flame Skimmer v1: https://zenodo.org/records/20030439
+Elf Owl v2: https://zenodo.org/records/15150874

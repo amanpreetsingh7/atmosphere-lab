@@ -1,0 +1,7 @@
+[
+  {
+    "family": "sonora_bobcat",
+    "parameters": {"teff_K": 1000, "logg_cgs": 4.0, "metallicity_dex": 0.0, "co_relative_solar": 1.0},
+    "spectrum": {"format": "sonora_bobcat", "file": "../models/bobcat_planet.dat", "skiprows": 1, "wavelength_frame": "vacuum"}
+  }
+]

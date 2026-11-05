@@ -1,0 +1,32 @@
+{
+  "title": "PHOENIX star / Sonora Bobcat planet (illustrative parameter choice)",
+  "star": {
+    "label": "PHOENIX stellar atmosphere",
+    "radius": {"value": 1.0, "unit": "R_sun"},
+    "spectrum": {
+      "format": "phoenix_hires",
+      "file": "../models/phoenix_star.fits",
+      "wavelength_file": "../models/WAVE_PHOENIX-ACES-AGSS-COND-2011.fits",
+      "wavelength_frame": "vacuum",
+      "source_url": "https://phoenix.astro.physik.uni-goettingen.de/spectra/",
+      "parameters": {"teff_K": 5000, "logg_cgs": 4.5, "metallicity_dex": 0.0, "alpha_dex": 0.0}
+    }
+  },
+  "planet": {
+    "label": "Sonora Bobcat planetary atmosphere",
+    "radius": {"value": 1.0, "unit": "R_jup"},
+    "spectrum": {
+      "format": "sonora_bobcat",
+      "file": "../models/bobcat_planet.dat",
+      "skiprows": 1,
+      "wavelength_frame": "vacuum",
+      "source_url": "https://zenodo.org/records/5063476",
+      "parameters": {"teff_K": 1000, "logg_cgs": 4.0, "metallicity_dex": 0.0, "co_relative_solar": 1.0}
+    }
+  },
+  "bin_resolving_power": 100,
+  "wavelength_range_um": [0.8, 5.0],
+  "distance_pc": 10,
+  "output_directory": "../results",
+  "filters": []
+}

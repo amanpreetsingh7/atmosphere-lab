@@ -1,0 +1,55 @@
+{
+  "description": "Illustrative catalog parameters with a synthetic response. Edit the model selections and response before using for science.",
+  "catalog": "configs/app_catalog.json",
+  "star": {
+    "family": "phoenix_hires",
+    "parameters": {
+      "teff_K": 5000,
+      "logg_cgs": 4.5,
+      "metallicity_dex": 0.0,
+      "alpha_dex": 0.0
+    },
+    "radius": {
+      "value": 1.0,
+      "unit": "R_sun"
+    },
+    "selection": "exact"
+  },
+  "companion": {
+    "family": "sonora_bobcat",
+    "parameters": {
+      "teff_K": 1000.0,
+      "logg_cgs": 4.0,
+      "metallicity_dex": 0.0,
+      "co_relative_solar": 1.0
+    },
+    "radius": {
+      "value": 1.0,
+      "unit": "R_jup"
+    },
+    "selection": "exact"
+  },
+  "response": {
+    "kind": "filter_and_sky_csv",
+    "name": "Synthetic unity response (method demonstration only)",
+    "limits_um": [
+      1,
+      4
+    ],
+    "filter": {
+      "file": "templates/demo_filter.csv",
+      "wavelength_unit": "um",
+      "transmission_unit": "fraction",
+      "wavelength_frame": "vacuum"
+    },
+    "sky": {
+      "file": "templates/demo_sky.csv",
+      "wavelength_unit": "um",
+      "transmission_unit": "fraction",
+      "wavelength_frame": "vacuum"
+    }
+  },
+  "distance_pc": 10.0,
+  "detector": "photon",
+  "samples": 301
+}

@@ -1,0 +1,207 @@
+{
+  "diamondback": {
+    "source": {
+      "record": "12735103",
+      "archive": "spectra.zip",
+      "bytes": 8560369066,
+      "official_archive_md5": "629ae5f8e7163169d6f07bfea05d6fc2",
+      "adapter": "sonora_diamondback",
+      "family": "sonora_diamondback",
+      "count": 8
+    },
+    "members": [
+      {
+        "name": "spectra/t1000g100f4_m0.0_co1.0.spec",
+        "size": 11205421,
+        "compressed": 4833222,
+        "crc": 1606799418
+      },
+      {
+        "name": "spectra/t1000g100nc_m0.0_co1.0.spec",
+        "size": 11212609,
+        "compressed": 4853044,
+        "crc": 449094961
+      },
+      {
+        "name": "spectra/t1000g100f3_m0.0_co1.0.spec",
+        "size": 11204876,
+        "compressed": 4799755,
+        "crc": 3412599674
+      },
+      {
+        "name": "spectra/t1000g100f2_m0.0_co1.0.spec",
+        "size": 14690668,
+        "compressed": 6637583,
+        "crc": 1162811912
+      },
+      {
+        "name": "spectra/t1000g100f2_m+0.5_co1.0.spec",
+        "size": 14684298,
+        "compressed": 6639553,
+        "crc": 893688551
+      },
+      {
+        "name": "spectra/t1000g100f8_m0.0_co1.0.spec",
+        "size": 11205538,
+        "compressed": 4842722,
+        "crc": 656191360
+      },
+      {
+        "name": "spectra/t1000g100f2_m-0.5_co1.0.spec",
+        "size": 14687401,
+        "compressed": 6641339,
+        "crc": 1282509822
+      },
+      {
+        "name": "spectra/t1000g100f1_m0.0_co1.0.spec",
+        "size": 11204888,
+        "compressed": 4755438,
+        "crc": 119000947
+      }
+    ],
+    "native_header_lines": {
+      "spectra/t1000g100f1_m0.0_co1.0.spec": [
+        "wavelength (micron) \t flux (W/m2/m)\t",
+        "calculated using grid spacing: std \t"
+      ],
+      "spectra/t1000g100f2_m+0.5_co1.0.spec": [
+        "wavelength (micron) \t flux (W/m2/m)\t",
+        "calculated using grid spacing: std \t"
+      ],
+      "spectra/t1000g100f2_m-0.5_co1.0.spec": [
+        "wavelength (micron) \t flux (W/m2/m)\t",
+        "calculated using grid spacing: std \t"
+      ],
+      "spectra/t1000g100f2_m0.0_co1.0.spec": [
+        "wavelength (micron) \t flux (W/m2/m)\t",
+        "calculated using grid spacing: std \t"
+      ],
+      "spectra/t1000g100f3_m0.0_co1.0.spec": [
+        "wavelength (micron) \t flux (W/m2/m)\t",
+        "calculated using grid spacing: std \t"
+      ],
+      "spectra/t1000g100f4_m0.0_co1.0.spec": [
+        "wavelength (micron) \t flux (W/m2/m)\t",
+        "calculated using grid spacing: std \t"
+      ],
+      "spectra/t1000g100f8_m0.0_co1.0.spec": [
+        "wavelength (micron) \t flux (W/m2/m)\t",
+        "calculated using grid spacing: std \t"
+      ],
+      "spectra/t1000g100nc_m0.0_co1.0.spec": [
+        "wavelength (micron) \t flux (W/m2/m)\t",
+        "calculated using grid spacing: std \t"
+      ]
+    }
+  },
+  "flame": {
+    "source": {
+      "record": "20030439",
+      "archive": "spectra_R3k_quickstart.zip",
+      "bytes": 8676930102,
+      "official_archive_md5": "0fcdcc0370df324e5cc9b11f8d01ffb4",
+      "adapter": "sonora_flame_skimmer_v1_r3k",
+      "family": "sonora_flame_skimmer_v1_r3k",
+      "count": 11
+    },
+    "members": [
+      {
+        "name": "deq/mh_+0.0/co_1.0/spectra_logkzz_2_teff_1000_grav_100_mh_+0.0_co_1.0_R3000.nc",
+        "size": 293354,
+        "compressed": 293354,
+        "crc": 2413198681
+      },
+      {
+        "name": "deq/mh_+0.0/co_1.0/spectra_logkzz_4_teff_1000_grav_100_mh_+0.0_co_1.0_R3000.nc",
+        "size": 292933,
+        "compressed": 292933,
+        "crc": 211321641
+      },
+      {
+        "name": "deq/mh_+0.0/co_1.0/spectra_logkzz_7_teff_1000_grav_100_mh_+0.0_co_1.0_R3000.nc",
+        "size": 291638,
+        "compressed": 291638,
+        "crc": 2928885442
+      },
+      {
+        "name": "deq/mh_+0.0/co_1.0/spectra_logkzz_8_teff_1000_grav_100_mh_+0.0_co_1.0_R3000.nc",
+        "size": 291457,
+        "compressed": 291457,
+        "crc": 620743620
+      },
+      {
+        "name": "deq/mh_+0.0/co_1.0/spectra_logkzz_9_teff_1000_grav_100_mh_+0.0_co_1.0_R3000.nc",
+        "size": 291132,
+        "compressed": 291132,
+        "crc": 474692137
+      },
+      {
+        "name": "eq/mh_+0.0/co_0.5/spectra_teff_1000_grav_100_mh_+0.0_co_0.5_R3000.nc",
+        "size": 296558,
+        "compressed": 296558,
+        "crc": 705014707
+      },
+      {
+        "name": "eq/mh_+0.0/co_1.0/spectra_teff_1000_grav_100_mh_+0.0_co_1.0_R3000.nc",
+        "size": 296610,
+        "compressed": 296610,
+        "crc": 4431255
+      },
+      {
+        "name": "eq/mh_+0.0/co_1.5/spectra_teff_1000_grav_100_mh_+0.0_co_1.5_R3000.nc",
+        "size": 296824,
+        "compressed": 296824,
+        "crc": 3065528328
+      },
+      {
+        "name": "eq/mh_+0.0/co_2.5/spectra_teff_1000_grav_100_mh_+0.0_co_2.5_R3000.nc",
+        "size": 296985,
+        "compressed": 296985,
+        "crc": 181595811
+      },
+      {
+        "name": "eq/mh_+0.5/co_1.0/spectra_teff_1000_grav_100_mh_+0.5_co_1.0_R3000.nc",
+        "size": 297777,
+        "compressed": 297777,
+        "crc": 2624891020
+      },
+      {
+        "name": "eq/mh_-0.5/co_1.0/spectra_teff_1000_grav_100_mh_-0.5_co_1.0_R3000.nc",
+        "size": 294565,
+        "compressed": 294565,
+        "crc": 3083634568
+      }
+    ],
+    "netcdf_metadata": {
+      "attrs": {
+        "author": "Mang(climate+chem),Batalha(hi-res spec)",
+        "code": "PICASO V4 + chemistry visscher 2121",
+        "doi": "Mang et al. FlameSkimmer paper",
+        "planet_params": "{\"effective_temp\": {\"value\": 1000.0, \"unit\": \"K\"}, \"gravity\": {\"value\": 10000.0, \"unit\": \"cm / s2\"}, \"logmh\": 0.0, \"cto\": {\"value\": 1.0, \"unit\": \"relative to Solar (=0.458)\"}, \"p_reference\": {\"value\": 1.0, \"unit\": \"bar\"}}",
+        "rebinned_resolution": "R=3000",
+        "rebinned_from": "R=30000",
+        "rebinned_with": "PICASO picaso.opacity_factory.create_grid and scipy.stats.binned_statistic",
+        "source_filename": "spectra_teff_1000_grav_100_mh_+0.0_co_1.0.nc"
+      },
+      "variables": {
+        "wavelength": {
+          "dims": [
+            "wavelength"
+          ],
+          "attrs": {
+            "units": "micron"
+          }
+        },
+        "flux_emission": {
+          "dims": [
+            "wavelength"
+          ],
+          "attrs": {
+            "units": "erg/cm**2/s/cm"
+          }
+        }
+      }
+    }
+  },
+  "scope": "Official ZIP directory entries and one NetCDF metadata inspection only (2026-10-19). No native spectral arrays or native science results are included. Tests pair these headers with manufactured arrays."
+}

@@ -1,0 +1,36 @@
+[
+  {
+    "role": "star",
+    "family": "phoenix_hires",
+    "parameters": {
+      "teff_K": 5000,
+      "logg_cgs": 4.5,
+      "metallicity_dex": 0.0,
+      "alpha_dex": 0.0
+    },
+    "spectrum": {
+      "format": "phoenix_hires",
+      "file": "../models/phoenix_star.fits",
+      "wavelength_file": "../models/WAVE_PHOENIX-ACES-AGSS-COND-2011.fits",
+      "wavelength_frame": "vacuum",
+      "source_url": "https://phoenix.astro.physik.uni-goettingen.de/spectra/"
+    }
+  },
+  {
+    "role": "planet",
+    "family": "sonora_bobcat",
+    "parameters": {
+      "teff_K": 1000,
+      "logg_cgs": 4.0,
+      "metallicity_dex": 0.0,
+      "co_relative_solar": 1.0
+    },
+    "spectrum": {
+      "format": "sonora_bobcat",
+      "file": "../models/bobcat_planet.dat",
+      "skiprows": 1,
+      "wavelength_frame": "vacuum",
+      "source_url": "https://zenodo.org/records/5063476"
+    }
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "kind": "filter_and_sky_csv",
+  "name": "Synthetic unity response (method demonstration only)",
+  "limits_um": [
+    1,
+    4
+  ],
+  "filter": {
+    "file": "templates/demo_filter.csv",
+    "wavelength_unit": "um",
+    "transmission_unit": "fraction",
+    "wavelength_frame": "vacuum"
+  },
+  "sky": {
+    "file": "templates/demo_sky.csv",
+    "wavelength_unit": "um",
+    "transmission_unit": "fraction",
+    "wavelength_frame": "vacuum"
+  }
+}
